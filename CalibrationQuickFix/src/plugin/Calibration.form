@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[940, 360]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" max="32767" attributes="0"/>
+          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Pickup"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="pickupEnableCalibrationModeButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="pickupResetButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="hardCodedPanel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="currentCalibration" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="setRetractedLimit" alignment="0" max="32767" attributes="0"/>
+                      <Component id="setClearLimit" alignment="0" max="32767" attributes="0"/>
+                      <Component id="setExtendedSetpoint" alignment="0" max="32767" attributes="0"/>
+                      <Component id="setRetractedSetpoint" alignment="0" max="32767" attributes="0"/>
+                      <Component id="setExtendedLimit" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="hardCodedPanel" min="-2" max="-2" attributes="0"/>
+                      <Component id="currentCalibration" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="pickupResetButton" min="-2" max="-2" attributes="0"/>
+                      <Component id="pickupEnableCalibrationModeButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="setRetractedLimit" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="setExtendedLimit" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="setClearLimit" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="setExtendedSetpoint" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="setRetractedSetpoint" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="hardCodedPanel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Hardcoded Calibration"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="retractedSetpointLabel" pref="243" max="32767" attributes="0"/>
+                  <Component id="extendedSetpointLabel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="extendedLimitLabel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="clearLimitLabel" max="32767" attributes="0"/>
+                  <Component id="retractedLimitLabel" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="retractedLimitLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="clearLimitLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="extendedLimitLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="extendedSetpointLabel" min="-2" pref="14" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="retractedSetpointLabel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="retractedLimitLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Retracted Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="clearLimitLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Clear Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="extendedLimitLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Extended Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="extendedSetpointLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Extended Setpoint]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="retractedSetpointLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Retracted Setpoint]"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="currentCalibration">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Current Calibration"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="retractedLimitLabel2" max="32767" attributes="0"/>
+                  <Component id="clearLimitLabel2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="extendedLimitLabel2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="extendedSetpointLabel2" max="32767" attributes="0"/>
+                  <Component id="retractedSetpointLabel2" alignment="0" pref="243" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="retractedLimitLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="clearLimitLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="extendedLimitLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="extendedSetpointLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="retractedSetpointLabel2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="retractedLimitLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Retracted Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="clearLimitLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Clear Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="extendedLimitLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Extended Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="extendedSetpointLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Extended Setpoint]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="retractedSetpointLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Retracted Setpoint]"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="pickupResetButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="RESET"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pickupResetButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="pickupEnableCalibrationModeButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Enable Calibration Mode"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pickupEnableCalibrationModeButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setRetractedLimit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Retracted Limit to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setRetractedLimitActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setExtendedLimit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Extended Limit to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setExtendedLimitActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setClearLimit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Clear Limit to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setClearLimitActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setExtendedSetpoint">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Extended Setpoint to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setExtendedSetpointActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setRetractedSetpoint">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Retracted Setpoint to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setRetractedSetpointActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Petals"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="hardCodedPanel1" max="32767" attributes="0"/>
+              <Component id="currentCalibration1" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="petalsEnableCalibrationModeButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="petalsResetButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="setLOuter" alignment="0" max="32767" attributes="0"/>
+                      <Component id="setROuter" alignment="0" max="32767" attributes="0"/>
+                      <Component id="setRInner" alignment="0" max="32767" attributes="0"/>
+                      <Component id="setLInner" alignment="0" min="-2" pref="253" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="66" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="hardCodedPanel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="currentCalibration1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="petalsResetButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="petalsEnableCalibrationModeButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="setLOuter" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="setLInner" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="setROuter" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="setRInner" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="hardCodedPanel1">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Hardcoded Calibration"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="petalsRInner" alignment="0" max="32767" attributes="0"/>
+                  <Component id="petalsROuter" alignment="0" max="32767" attributes="0"/>
+                  <Component id="petalsLInner" alignment="0" max="32767" attributes="0"/>
+                  <Component id="petalsLOuter" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="petalsLOuter" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="petalsLInner" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="petalsROuter" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="petalsRInner" min="-2" pref="14" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="petalsLOuter">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Left Outer Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="petalsLInner">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Left Inner Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="petalsROuter">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Right Outer Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="petalsRInner">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Right Inner Limit]"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="currentCalibration1">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Current Calibration"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="petalsLOuter2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="petalsLInner2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="petalsROuter2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="petalsRInner2" alignment="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="petalsLOuter2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="petalsLInner2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="petalsROuter2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="petalsRInner2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="petalsLOuter2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Left Outer Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="petalsLInner2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Left Inner Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="petalsROuter2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Right Outer Limit]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="petalsRInner2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[Right Inner Limit]"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JCheckBox" name="petalsEnableCalibrationModeButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Enable Calibration Mode"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="petalsEnableCalibrationModeButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="petalsResetButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="RESET"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="petalsResetButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setLOuter">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Left Outer Limit to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setLOuterActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setLInner">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Left Inner Limit to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setLInnerActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setROuter">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Right Outer Limit to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setROuterActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="setRInner">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set Right Inner Limit to Current Pot Position"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setRInnerActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
