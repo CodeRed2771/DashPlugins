@@ -22,8 +22,8 @@ public class Ball implements Entity {
     public Ball(Pong pong) {
         location = new Point((pong.getScreenWidth() - 10) / 2,
                 (pong.getScreenHeight() - 10) / 2);
-        velocity = new Velocity(2 * (new Random().nextBoolean() ? 1 : -1),
-                2 * (new Random().nextBoolean() ? 1 : -1), -11, 5,
+        velocity = new Velocity(3 * (new Random().nextBoolean() ? 1 : -1),
+                3 * (new Random().nextBoolean() ? 1 : -1), -11, 5,
                 pong.getScreenWidth() - 3, pong.getScreenHeight() - 15);
         this.pong = pong;
     }
