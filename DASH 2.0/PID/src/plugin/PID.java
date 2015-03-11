@@ -59,7 +59,7 @@ public class PID extends javax.swing.JPanel implements DSMListener, SRAListener 
         for (int i = 0; i < names.length; i++) {
             if (names[i].startsWith("PIDE")) {//E for Error
                 for (int j = 0; j < names.length; j++) {
-                    if (names[j].charAt(3) == 'O'//O for Output
+                    if (names[j].length() > 3 && names[j].charAt(3) == 'O'//O for Output
                             && (names[j].substring(0, 3) + "E"
                             + names[j].substring(4)).matches(names[i])) {
                         list.add(names[i].substring(4));
@@ -91,7 +91,7 @@ public class PID extends javax.swing.JPanel implements DSMListener, SRAListener 
             if (synchronizedRegisterArray.get("PIDCP"
                     + listItems.get(jList1.getSelectedIndex())) == 0
                     && !(string = "" + synchronizedRegisterArray.get("PIDP"
-                    + listItems.get(jList1.getSelectedIndex()))).
+                            + listItems.get(jList1.getSelectedIndex()))).
                     matches(p.getText())) {
                 p.setText("" + synchronizedRegisterArray.get("PIDP"
                         + listItems.get(jList1.getSelectedIndex())));
@@ -100,7 +100,7 @@ public class PID extends javax.swing.JPanel implements DSMListener, SRAListener 
             if (synchronizedRegisterArray.get("PIDCI"
                     + listItems.get(jList1.getSelectedIndex())) == 0
                     && !(string = "" + synchronizedRegisterArray.get("PIDI"
-                    + listItems.get(jList1.getSelectedIndex()))).
+                            + listItems.get(jList1.getSelectedIndex()))).
                     matches(i.getText())) {
                 i.setText("" + synchronizedRegisterArray.get("PIDI"
                         + listItems.get(jList1.getSelectedIndex())));
@@ -109,7 +109,7 @@ public class PID extends javax.swing.JPanel implements DSMListener, SRAListener 
             if (synchronizedRegisterArray.get("PIDCD"
                     + listItems.get(jList1.getSelectedIndex())) == 0
                     && !(string = "" + synchronizedRegisterArray.get("PIDD"
-                    + listItems.get(jList1.getSelectedIndex()))).
+                            + listItems.get(jList1.getSelectedIndex()))).
                     matches(d.getText())) {
                 d.setText("" + synchronizedRegisterArray.get("PIDD"
                         + listItems.get(jList1.getSelectedIndex())));
@@ -118,7 +118,7 @@ public class PID extends javax.swing.JPanel implements DSMListener, SRAListener 
             if (synchronizedRegisterArray.get("PIDCS"
                     + listItems.get(jList1.getSelectedIndex())) == 0
                     && !(string = "" + synchronizedRegisterArray.get("PIDS"
-                    + listItems.get(jList1.getSelectedIndex()))).
+                            + listItems.get(jList1.getSelectedIndex()))).
                     matches(s.getText())) {
                 s.setText("" + synchronizedRegisterArray.get("PIDS"
                         + listItems.get(jList1.getSelectedIndex())));
@@ -128,11 +128,11 @@ public class PID extends javax.swing.JPanel implements DSMListener, SRAListener 
             graph1.removeAllStreams();
             graph1.addStream(
                     dataStreamingModule.getStream("PIDO"
-                    + listItems.get(jList1.getSelectedIndex())),
+                            + listItems.get(jList1.getSelectedIndex())),
                     Color.GREEN, 0.5, 0.4, false);
             graph1.addStream(
                     dataStreamingModule.getStream("PIDE"
-                    + listItems.get(jList1.getSelectedIndex())),
+                            + listItems.get(jList1.getSelectedIndex())),
                     Color.RED, 0.5,
                     0.5 / Double.parseDouble(es.getText()), true);
         }
